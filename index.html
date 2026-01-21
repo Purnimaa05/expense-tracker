@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <p class="subtitle">Track your income and expenses</p>
+    <div class="balance-box">
+      <h2>Current Balance</h2>
+      <h3>₹ <span id="balance">0</span></h3>
+    </div>
+    <div class="transaction-form">
+      <h2>Add Transaction</h2>
+      <input type="text"  id="description" placeholder="Enter description">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="addBtn">Add Transaction</button>
+    </div>
+    <div class="transaction">
+      <h2>Transactions</h2>
+      <ul id="transactionLists">
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
