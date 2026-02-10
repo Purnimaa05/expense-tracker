@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Settings</h1>
+    <p class="subtitle">Customize your expense tracker</p>
+
+    <label>User Name</label>
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <label>Currency</label>
+    <select id="currency">
+      <option value="₹">₹ Rupee</option>
+      <option value="$">$ Dollar</option>
+      <option value="€">€ Euro</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="darkMode">
+      Enable Dark Mode
+    </label>
+
+    <button id="saveSettings">Save Settings</button>
+
+    <p id="status"></p>
+
+    <br>
+    <button onclick="goBack()">⬅ Back to Tracker</button>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
