@@ -1,115 +1,148 @@
-/* Reset & base styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #f4f6f8;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Main container */
+/* Main Card Container */
 .container {
-  background-color: #ffffff;
-  width: 90%;
-  max-width: 40px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Headings */
 h1 {
   text-align: center;
-  color: #333;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   text-align: center;
-  color: #777;
-  margin-bottom: 20px;
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 14px;
 }
 
-
-.balance-box {
-  background-color: #e8f5e9;
-  text-align: center;
-  padding: 15px;
+/* Inputs & Select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
   border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e73df;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #2e59d9;
+}
+
+/* Balance Section */
+.balance-box {
+  background: #f8f9fc;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .balance-box h2 {
-  color: #555;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
-.balance-box h3 {
-  color: #2e7d32;
-  font-size: 24px;
-  margin-top: 5px;
-}
-
-.transaction-form h2,
-.transactions h2 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.transaction-form input,
-.transaction-form select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.transaction-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #1976d2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+#balance {
+  font-size: 22px;
   font-weight: bold;
+  color: #4e73df;
 }
 
-.transaction-form button:hover {
-  background-color: #1565c0;
-}
-
-
+/* Transactions */
 .transactions {
   margin-top: 20px;
 }
 
-.transactions ul {
-  list-style-type: none;
-}
-
-.transactions li {
-  background-color: #f1f1f1;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 8px;
+.transaction-item {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  align-items: center;
+  background: #f8f9fc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 
-/* Income & Expense colors (for later JS use) */
 .income {
-  border-left: 5px solid #2e7d32;
+  border-left: 5px solid #1cc88a;
 }
 
 .expense {
-  border-left: 5px solid #c62828;
+  border-left: 5px solid #e74a3b;
 }
+
+.delete-btn {
+  background: #e74a3b;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Status message */
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: green;
+}
+
+/* Links */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #4e73df;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+: #333
